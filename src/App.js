@@ -8,10 +8,7 @@ import Options from "./components/Options";
 
 function App() {
   const [theme, setTheme] = useState("dark");
-  const [items, setItems] = useState([
-    { id: 1, text: "vyniest smetie", isDone: false },
-    { id: 2, text: "popratat", isDone: true },
-  ]);
+  const [items, setItems] = useState([]);
   const [filterState, setFilterState] = useState("all");
 
   const changeTheme = () => {
@@ -50,25 +47,24 @@ function App() {
   };
 
   const filterItems = (option) => {
-    switch (option) {
-      case "all": {
-        return [...items];
-      }
-      case "active": {
-        return items.filter((item) => {
-          return item.isDone === false;
-        });
-      }
-      case "completed": {
-        return items.filter((item) => {
-          return item.isDone === true;
-        });
-      }
+    if (option === "all") {
+      return [...items];
+    }
+    if (option === "active") {
+      return items.filter((item) => {
+        return item.isDone === false;
+      });
+    }
+
+    if (option === "completed") {
+      return items.filter((item) => {
+        return item.isDone === true;
+      });
     }
   };
 
   return (
-    <main className="main">
+    <main className={`main main-${theme}`}>
       <Home theme={theme} className="home" />
       <div className="container">
         <Header theme={theme} changeTheme={changeTheme} />

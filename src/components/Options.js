@@ -12,9 +12,10 @@ function Options({ theme, filterState, setFilterState }) {
   return (
     <div className={`options options-${theme}`}>
       <div className={`options-center .${filterState}`}>
-        {buttonText.map((btnText) => {
+        {buttonText.map((btnText, index) => {
           return (
             <button
+              key={index}
               className={btnText === filterState ? "active" : ""}
               onClick={hadnleClick}
             >

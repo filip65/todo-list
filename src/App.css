@@ -9,18 +9,36 @@ html {
 
 .main {
   min-height: 100vh;
+  width: 100%;
   padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  z-index: -2;
+}
+
+.main-dark {
+  background: hsl(235, 21%, 11%);
+}
+
+.main-light {
+  background: hsl(0, 0%, 98%);
 }
 
 .container {
-  position: absolute;
+  position: relative;
   /* background: red; */
   width: 90%;
   max-width: 540px;
   min-height: 85vh;
-  left: 5%;
   top: 4rem;
   font-size: 18px;
   font-family: "Josefin Sans", sans-serif;
   padding-bottom: 3rem;
+}
+
+@media (min-width: 992px) {
+  .container {
+    top: 5rem;
+  }
 }

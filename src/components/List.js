@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "../css/list.css";
 import CheckButton from "./CheckButton";
 import deleteIcon from "../images/icon-cross.svg";
