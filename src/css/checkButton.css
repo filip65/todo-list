@@ -1,0 +1,17 @@
+.button {
+  background-size: red;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  border-color: hsl(234, 39%, 85%);
+  background: transparent;
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checked {
+  background: linear-gradient(125deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}

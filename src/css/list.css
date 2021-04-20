@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+}
+
+.list {
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.58);
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.58);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.todo-list {
+  width: 100%;
+  padding: 0px;
+
+  margin: 0;
+}
+
+.todo-item {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 10px 20px;
+  border-bottom: 1px solid hsl(236, 10%, 27%);
+}
+
+.todo-item-dark {
+  background: hsl(235, 24%, 19%);
+}
+
+.todo-item-light {
+  background: hsl(0, 0%, 98%);
+}
+
+.todo-item > button {
+  background: none;
+  border: none;
+}
+
+.todo-item > button > img {
+  height: 15px;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-self: start;
+}
+
+.wrapper > p {
+  margin: 0px;
+  padding: 0 10px;
+  color: hsl(234, 11%, 52%);
+  text-transform: capitalize;
+}
+
+.wrapper > .item-done {
+  color: hsl(237, 13%, 31%);
+  text-decoration: line-through;
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-dark {
+  background: hsl(235, 24%, 19%);
+}
+
+.footer-light {
+  background: hsl(0, 0%, 98%);
+}
+
+.footer > p {
+  margin: 0;
+  color: hsl(237, 9%, 49%);
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  color: hsl(237, 9%, 49%);
+}

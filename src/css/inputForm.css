@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+.inputForm {
+  max-width: 100%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.inputForm-dark {
+  background: hsl(235, 24%, 19%);
+}
+
+.inputForm-light {
+  background: hsl(0, 0%, 98%);
+}
+
+.form > input {
+  background: transparent;
+  border: none;
+  margin-left: 10px;
+  color: hsl(234, 11%, 52%);
+  width: 140%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  align-items: center;
+}
