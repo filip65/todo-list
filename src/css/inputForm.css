@@ -3,7 +3,6 @@
 .inputForm {
   max-width: 100%;
   height: 50px;
-
   display: flex;
   align-items: center;
   padding: 10px 20px;
@@ -30,4 +29,14 @@
   font-size: 15px;
   align-items: center;
   outline: none;
+}
+
+@media (min-width: 992px) {
+  .form > input {
+    font-size: 17px;
+  }
+
+  .inputForm {
+    height: 65px;
+  }
 }

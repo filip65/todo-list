@@ -20,7 +20,9 @@ function App() {
   };
 
   const addItem = (item) => {
-    setItems([...items, item]);
+    if (item.text.trim()) {
+      setItems([...items, item]);
+    }
   };
 
   const deleteItem = (id) => {
